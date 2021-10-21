@@ -22,7 +22,9 @@ const SignUp = () => {
 
       {/* Input */}
       <InputValidate placeholder="Email"></InputValidate>
-      <InputValidate placeholder="Password"></InputValidate>
+      <InputValidate
+        placeholder="Password"
+        secureTextEntry={true}></InputValidate>
       <InputValidate placeholder="Confirm Password"></InputValidate>
 
       {/* Btn sign up */}

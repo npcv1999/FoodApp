@@ -2,7 +2,13 @@ import React from 'react';
 import {Image, StyleSheet, Text, TextInput, View} from 'react-native';
 import {COLORS, IMAGES, STYLES} from '../utils';
 
-const InputValidate = ({placeholder, value, onChangeText, isCorrect}) => {
+const InputValidate = ({
+  placeholder,
+  value,
+  onChangeText,
+  isCorrect,
+  secureTextEntry = false,
+}) => {
   return (
     <View
       style={[
@@ -16,7 +22,8 @@ const InputValidate = ({placeholder, value, onChangeText, isCorrect}) => {
       <TextInput
         placeholder={placeholder}
         value={value}
-        onChangeText={onChangeText}></TextInput>
+        onChangeText={onChangeText}
+        secureTextEntry={secureTextEntry}></TextInput>
       {isCorrect ? (
         <Image
           style={{
