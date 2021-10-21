@@ -1,0 +1,16 @@
+export const COLORS = {
+  red_orange: '#FB6D3B',
+  orange: '#FC9631',
+  light_pink: '#FFF1E5',
+  black_blue: '#4F585E',
+  light_black_blue: '#697586',
+  gray: '#9B9B9B',
+  light_gray: '#C3C3C3',
+  light_gray1: '#F6F6F6',
+  white: '#FFFFFF',
+  light_green: '#3ABC5E',
+  light_red: '#F43E3E',
+  sky_blue: '#4B8EDD',
+  dark_blue: '#4460A0',
+  light_blue: '#4285F4',
+};
