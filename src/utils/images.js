@@ -26,4 +26,7 @@ export const IMAGES = {
   user: require('../assets/images/icons/user.png'),
   ticket: require('../assets/images/ticket.png'),
   x: require('../assets/images/icons/x.png'),
+  down: require('../assets/images/icons/arrowDown.png'),
+  search: require('../assets/images/icons/search.png'),
+  dot: require('../assets/images/icons/dot16.png'),
 };

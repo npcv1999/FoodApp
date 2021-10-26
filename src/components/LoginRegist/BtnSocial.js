@@ -40,6 +40,7 @@ const styles = StyleSheet.create({
     paddingVertical: STYLES.padVer14,
     flexDirection: 'row',
     padding: 8,
+    height: STYLES.height46,
   },
   label: {
     fontWeight: '900',
