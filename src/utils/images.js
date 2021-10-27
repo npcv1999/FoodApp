@@ -29,4 +29,5 @@ export const IMAGES = {
   down: require('../assets/images/icons/arrowDown.png'),
   search: require('../assets/images/icons/search.png'),
   dot: require('../assets/images/icons/dot16.png'),
+  restaurant: require('../assets/images/restaurant.png'),
 };

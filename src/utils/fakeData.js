@@ -68,4 +68,85 @@ export const CUISINES = [
   },
 ];
 
-export const DATA = {BANNERS, POPULAR_EAT, CATEGORIES, CUISINES};
+export const MENU = [
+  {
+    title: 'Special delivery',
+    items: [
+      {
+        title: 'Shrimp pizza',
+        kcal: 475,
+        detail: 'Shrimp, mushroom, cheese, tomato',
+        price: '12.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'Pinnacle pizza',
+        kcal: 500,
+        detail: 'Luna’s howl, hush, delirium, revoker',
+        price: '99.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'House Stoke Pizza ',
+        kcal: 500,
+        detail: 'Pig, pog, pet, pird',
+        price: '15.00',
+        oldPrice: '20.00',
+      },
+    ],
+  },
+  {
+    title: 'Hot Deals',
+    items: [
+      {
+        title: 'Hot Deals Shrimp pizza',
+        kcal: 475,
+        detail: 'Shrimp, mushroom, cheese, tomato',
+        price: '12.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'Hot Deals Pinnacle pizza',
+        kcal: 500,
+        detail: 'Luna’s howl, hush, delirium, revoker',
+        price: '99.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'Hot Deals House Stoke Pizza ',
+        kcal: 500,
+        detail: 'Pig, pog, pet, pird',
+        price: '15.00',
+        oldPrice: '20.00',
+      },
+    ],
+  },
+  {
+    title: 'Hot Deals',
+    items: [
+      {
+        title: 'Hot Deals Shrimp pizza',
+        kcal: 475,
+        detail: 'Shrimp, mushroom, cheese, tomato',
+        price: '12.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'Hot Deals Pinnacle pizza',
+        kcal: 500,
+        detail: 'Luna’s howl, hush, delirium, revoker',
+        price: '99.00',
+        oldPrice: '20.00',
+      },
+      {
+        title: 'Hot Deals House Stoke Pizza ',
+        kcal: 500,
+        detail: 'Pig, pog, pet, pird',
+        price: '15.00',
+        oldPrice: '20.00',
+      },
+    ],
+  },
+];
+
+export const DATA = {BANNERS, POPULAR_EAT, CATEGORIES, CUISINES, MENU};

@@ -16,4 +16,5 @@ export const COLORS = {
   border_search: '#DBDFE3',
   bg_search: '#F6F6F6',
   txtLabel: '#4F585E',
+  line: '#EFF0F3',
 };
