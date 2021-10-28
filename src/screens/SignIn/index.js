@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/core';
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import BtnDefaultPrimary from '../../components/BtnDefaultPrimary';
@@ -6,10 +7,16 @@ import BtnSocial from '../../components/LoginRegist/BtnSocial';
 import HeaderBackBtn from '../../components/LoginRegist/HeaderBackBtn';
 import HeadlineTitle from '../../components/LoginRegist/HeadlineTitle';
 import Title from '../../components/LoginRegist/Title';
+import {ROUTES} from '../../navigations/Routes';
 import {STYLES} from '../../utils';
 import {styles} from './styles';
 
+const onSignUp = navigation => {
+  navigation.navigate(ROUTES.SIGNUP);
+};
+
 const SignIn = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       {/* Header back */}
@@ -19,7 +26,8 @@ const SignIn = () => {
       <Title label="Sign In"></Title>
       <HeadlineTitle
         label="Don't have account?"
-        pressLabel=" Sign up now!"></HeadlineTitle>
+        pressLabel=" Sign up now!"
+        onPress={() => onSignUp(navigation)}></HeadlineTitle>
 
       {/* Input value */}
       <InputValidate placeholder="Email or Phone Number"></InputValidate>

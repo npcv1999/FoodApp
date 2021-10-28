@@ -30,4 +30,5 @@ export const IMAGES = {
   search: require('../assets/images/icons/search.png'),
   dot: require('../assets/images/icons/dot16.png'),
   restaurant: require('../assets/images/restaurant.png'),
+  order: require('../assets/images/icons/order.png'),
 };

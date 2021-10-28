@@ -1,8 +1,10 @@
+import {useNavigation} from '@react-navigation/core';
 import React from 'react';
 import {Image, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {IMAGES} from '../../utils';
 
 const HeaderBackBtn = ({onPress}) => {
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       style={{
@@ -10,7 +12,7 @@ const HeaderBackBtn = ({onPress}) => {
         height: 14,
         marginTop: 29,
       }}
-      onPress={onPress}>
+      onPress={() => navigation.goBack()}>
       <Image source={IMAGES.chevron_left} resizeMode="contain"></Image>
     </TouchableOpacity>
   );

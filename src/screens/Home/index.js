@@ -9,10 +9,10 @@ import PopCuisinesCpn from './components/PopCuisines';
 import PopEat from './components/PopEatries';
 import {styles} from './styles';
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <SafeAreaViewIOS>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
           {/* Header */}
           <View style={styles.headerContainer}>
@@ -43,7 +43,7 @@ const Home = () => {
           {/* Carousel */}
           <BannerCarousel></BannerCarousel>
           {/* Popular Eatries */}
-          <PopEat></PopEat>
+          <PopEat {...navigation}></PopEat>
           {/* Categories */}
           <CategoriesComponent></CategoriesComponent>
           {/* NearBy */}

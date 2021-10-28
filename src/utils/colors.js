@@ -17,4 +17,5 @@ export const COLORS = {
   bg_search: '#F6F6F6',
   txtLabel: '#4F585E',
   line: '#EFF0F3',
+  tabBarIcon: '#FFF1E5',
 };

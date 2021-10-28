@@ -1,3 +1,4 @@
+import {useNavigation} from '@react-navigation/core';
 import React, {useState} from 'react';
 import {View, Text, Image, TouchableOpacity, FlatList} from 'react-native';
 import {COLORS, DATA, IMAGES} from '../../utils';
@@ -11,9 +12,16 @@ export const onPressMenu = value => {
   console.log('value', value);
 };
 
-const Restaurant = ({onBack, onLike, onInfo}) => {
+const Restaurant = ({onLike, onInfo}) => {
   const [enableStickyHeader, setEnableStickyHeader] = useState(true);
   const [foodSelected, setFoodSelected] = useState(false);
+
+  // Navigation
+  const navigation = useNavigation();
+
+  const onBack = () => {
+    navigation.goBack();
+  };
 
   const item = {id: 1, time: '5 min', range: '1.1 km', star: '5.0'};
 
